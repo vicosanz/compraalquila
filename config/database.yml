@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: compraalquila_production
-  username: compraalquila
-  password: <%= ENV['COMPRAALQUILA_DATABASE_PASSWORD'] %>
+  url: <%= ENV["DATABASE_URL"] %>
+#  database: compraalquila_production
+#  username: compraalquila
+#  password: <%= ENV['COMPRAALQUILA_DATABASE_PASSWORD'] %>
